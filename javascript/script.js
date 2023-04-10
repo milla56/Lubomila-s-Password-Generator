@@ -96,7 +96,7 @@ var minLength = 12;
 function getPasswordOptions() {
   var passwordLenght = parseInt(prompt("How long does your password have to be,choose between 12 and 128 ?"));
   if (isNaN(passwordLenght) === true || passwordLenght < 12 || passwordLenght > 128) {
-    alert('Password length must be a NUMBER between 12 and 128. Please try again.');
+    alert('Password length must be long between 12 and 128 characters. Please try again!');
     return;
   } else {
     var lowerCaseConfirm = confirm("Do you want lowercase characters in your password?");
@@ -121,13 +121,37 @@ return userInput;
 
 // Function for getting a random element from an array
 function getRandom(arr) {
+  var randomIndex = Math.floor( Math.random() * arr.lenght);
+  return arr[randomIndex];
 
 }
 
 // Function to generate password with user input
-function generatePassword() {
+function generatePassword (upperCasedCharacters, lowerCasedCharacters, numericCharacters, specialCharacters)
+  {
+    return []
+      .reduce((collection, item) => {
+        if (upperCasedCharacters) collection.push(item);
+        return collection;
+      }, uppercase)
+      .reduce((collection, item) => {
+        if (lowerCasedCharacters) collection.push(item);
+        return collection;
+      }, lowercase)
+      .reduce((collection, item) => {
+        if (numericCharacters) collection.push(item);
+        return collection;
+      }, numbers)
+      .reduce((collection, item) => {
+        if (specialCharacters) collection.push(item);
+        return collection;
+      }, symbols)
+      .sort(() => Math.random() - 0.5)
+      .slice(0, PASSWORD_LENGTH)
+      .join('');
+  }
 
-}
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
