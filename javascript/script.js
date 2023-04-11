@@ -155,30 +155,7 @@ for (var i=0; i<userOptions.passwordLength; i++){
 
 return passwordText
 
-
-  // return []
-  //   .reduce((collection, item) => {
-  //     if (upperCasedCharacters) collection.push(item);
-  //     return collection;
-  //   }, upperCasedCharacters)
-  //   .reduce((collection, item) => {
-  //     if (lowerCasedCharacters) collection.push(item);
-  //     return collection;
-  //   }, lowercase)
-  //   .reduce((collection, item) => {
-  //     if (numericCharacters) collection.push(item);
-  //     return collection;
-  //   }, numbers)
-  //   .reduce((collection, item) => {
-  //     if (specialCharacters) collection.push(item);
-  //     return collection;
-  //   }, symbols)
-  //   .sort(() => Math.random() - 0.5)
-  //   .slice(0, PASSWORD_LENGTH)
-  //   .join('');
 }
-
-
 
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
