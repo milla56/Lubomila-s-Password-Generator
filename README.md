@@ -7,7 +7,7 @@ Module 5 Challenge - JavaScript: Password Generator
 
 ## Installation
 
-Follow the link for the final version of the website [Password-Generator](https://milla56.github.io/Lubomila-s-Console-Finances/) 
+Follow the link for the deployments website [Password-Generator](https://milla56.github.io/Lubomila-s-Password-Generator/) 
 
 ## Usage
 The list shows what steps were made to complete the challenge:
@@ -24,13 +24,13 @@ The list shows what steps were made to complete the challenge:
 
 
 ![TEST 1](./screenshot/test1.gif)
-This example shows how the code works when all of the five options are selected. 
+This example shows how the code works when all five options are selected. 
 
 ![TEST 2](./screenshot/test2.gif)
 This example shows how the code works if one of the options is not selected.
 
 ![TEST 3](./screenshot/test3.gif)
-This example shows what message is displayed when none of the option is selected. 
+This example shows what message is displayed when none of the options is selected. 
 
 
 ## Credits
