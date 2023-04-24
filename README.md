@@ -7,7 +7,7 @@ Module 5 Challenge - JavaScript: Password Generator
 
 ## Installation
 
-Follow the link for the deployments website [Password-Generator](https://milla56.github.io/Lubomila-s-Password-Generator/) 
+Follow the link for the deployed website [Password-Generator](https://milla56.github.io/Lubomila-s-Password-Generator/) 
 
 ## Usage
 The list shows what steps were made to complete the challenge:
